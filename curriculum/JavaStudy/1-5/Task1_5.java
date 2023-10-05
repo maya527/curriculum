@@ -44,12 +44,13 @@ public class Task1_5 {
 
         // 九九の段を生成して表示
         for (int n = 1; n <= rows; n++) {
-            System.out.println(n + " || ");
+            System.out.print(n + " || ");
 
             for (int j = 1; j <= 9; j++) {
                 int result = n * j;
-                System.out.println(result + " | ");
+                System.out.print(result + " | ");
             }
+            System.out.println();
         }
     }
 }
