@@ -49,7 +49,7 @@ public class DBUpdate {
             String SQL = "UPDATE TB_SHOHIN SET SHOHIN_NAME = '商品20' WHERE SHOHIN_ID = '020'";
 
             // 問⑥ 上記のSQL文を実行するための文を記述しましょう。
-
+            statement.executeUpdate(SQL);
             //一覧表示
             String SQLselect = "SELECT * FROM TB_SHOHIN";
             resultSet = statement.executeQuery(SQLselect);
