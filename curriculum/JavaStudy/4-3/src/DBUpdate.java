@@ -67,6 +67,7 @@ public class DBUpdate {
         // forName()で例外発生
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+           
 
         // getConnection()、createStatement()、executeQuery()で例外発生
         } catch (SQLException e) {
