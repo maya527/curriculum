@@ -43,7 +43,8 @@ public class DBSelect {
             connection = DriverManager.getConnection(JDBC_CONNECTION, USER, PASS);
             statement = connection.createStatement();
             // 問⑤ SHOHIN_IDが001と020のものを表示させるためのSQL文を記述しましょう。
-            String SQL = "\"SELECT * FROM TB_SHOHIN WHERE shohin_id = '001' OR shohin_id = '020'\"";
+            String SQL = "SELECT * FROM TB_SHOHIN WHERE shohin_id = '001' OR shohin_id = '020'";
+
             resultSet = statement.executeQuery(SQL);
 
             while (resultSet.next()) {
